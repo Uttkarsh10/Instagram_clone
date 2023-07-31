@@ -1,0 +1,40 @@
+.loginpage__main{
+    display: flex;
+}
+
+.loginpage__right{
+    display: flex;
+    flex-direction: column;
+}
+
+.loginpage__logo{
+    width: 175px;
+    margin-top: 25px;
+}
+
+.loginpage__rightcomponent{
+    height: 380px;
+    width: 350px;
+    border: 1px solid #DBDBDB;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.loginpage__rightcomponent2{
+    display: flex;
+    height: 60px;
+    width: 350px;
+    border: 1px solid #DBDBDB;
+    margin-top: 5px; 
+    align-items: center;
+}
+
+.signup__link{
+    color: rgb(25, 96, 143);
+    margin-left: 10px;
+}
+
+.loginpage__rightcomponent3{
+    display: flex;
+    text-align: center;
+}
