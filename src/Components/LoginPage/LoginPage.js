@@ -4,6 +4,7 @@ import inst_image from '../../Images/9364675fb26a.svg'
 import insta_logo from '../../Images/logoinsta.png'
 import app_logo from '../../Images/app.png'
 import play_logo from '../../Images/play.png'
+import fb_logo from '../../Images/fb.png'
 import './LoginPage.css'
 
 
@@ -23,14 +24,29 @@ const LoginPage = () => {
                                 <img className="loginpage__logo" src={insta_logo} alt=""/>
                             </div>
                             <div>
-                                Login Form
+                                <input className="input__text" placeholder="Phone number, username, or email"/>
+                                <input className="input__text" placeholder="Password"/>
+                                <button className="login__button">Log In</button>
+
+                                <div className="login__or">
+                                    <hr width="50px"/>
+                                      <h4>Or</h4>  
+                                    <hr width="50px"/>
+                                </div>
+
+                                <div>
+                                    <img src={fb_logo} alt="" width="15px"/>
+                                    <a href="javascript.void(0)" style={{ textDecoration: 'none' }} > Log in with Facebook</a>
+                                </div>
+                                <div>
+                                    <a href="javascript.void(0)" style={{ textDecoration: 'none' }}>Forgot password?</a>
+                                </div>
                             </div>
                         </div>
 
                         <div className="loginpage__rightcomponent2" style={{textAlign:"center"}}>
                                 <h3>Don't have an account?</h3>
-                                <h3 className="signup__link"> Sign Up</h3>
-                                {/* <button className="signup__link">Sign up</button> */}
+                                <a  href="javascript.void(0)" style={{ textDecoration: 'none' }}>Sign Up</a>
                         </div>
                         <h3 style={{textAlign:"center"}}>Get the App</h3>
 
