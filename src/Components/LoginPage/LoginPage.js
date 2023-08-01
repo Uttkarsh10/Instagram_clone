@@ -28,10 +28,10 @@ const LoginPage = () => {
                                 <input className="input__text" placeholder="Password"/>
                                 <button className="login__button">Log In</button>
 
-                                <div className="login__or">
-                                    <hr width="50px"/>
-                                      <h4>Or</h4>  
-                                    <hr width="50px"/>
+                                <div className="or__div">
+                                    <div className="or__line"></div>
+                                    <div className="login__or">OR</div> 
+                                    <div className="or__line"></div>
                                 </div>
 
                                 <div>

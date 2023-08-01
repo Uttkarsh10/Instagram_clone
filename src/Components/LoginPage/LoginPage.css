@@ -1,5 +1,10 @@
+body{
+    background-color: #FAFAFA;
+}
 .loginpage__main{
     display: flex;
+    margin-top: 10px;
+    margin-left: -65px;
 }
 
 .loginpage__right{
@@ -13,6 +18,7 @@
     border: 1px solid #DBDBDB;
     margin-top: 25px;
     text-align: center;
+    background-color: white;
 }
 
 .loginpage__logo{
@@ -24,18 +30,39 @@
     width: 250px;
     height: 30px;
     margin: 5px;
-    background-color:#f2f2f2;
-    border: 1px solid #ccc;
+    background-color:#FAFAFA;
+    border: 1px solid #DBDBDB;
     padding-left: 3px;
+    border-radius: 5px;
 }
 
 .login__button{
     width: 250px;
     height: 35px;
     color: white;
-    background-color:#617aae;
-    border: 1px solid #ccc;
+    margin-top: 5px;
+    font-weight: bold;
+    background-color:#0395F6;
+    border: 1px solid #0395F6;
     border-radius: 5px;
+}
+
+.or__div{
+    display:flex;
+    justify-content: center;
+}
+
+.or__line{
+    width: 80px;
+    height: 0px;
+    margin-top: 10px;
+    border: 1px solid #DBDBDB;
+}
+
+.login__or{
+    margin: 0px 10px;
+    font-weight: bold;
+    color: #8E8E8E;
 }
 
 
