@@ -6,6 +6,7 @@ import app_logo from '../../Images/app.png'
 import play_logo from '../../Images/play.png'
 import fb_logo from '../../Images/fb.png'
 import './LoginPage.css'
+import Signin from "./Signin";
 
 
 const LoginPage = () => {
@@ -24,9 +25,10 @@ const LoginPage = () => {
                                 <img className="loginpage__logo" src={insta_logo} alt=""/>
                             </div>
                             <div>
-                                <input className="input__text" placeholder="Phone number, username, or email"/>
+                                {/* <input className="input__text" placeholder="Phone number, username, or email"/>
                                 <input className="input__text" placeholder="Password"/>
-                                <button className="login__button">Log In</button>
+                                <button className="login__button">Log In</button> */}
+                                <Signin/>
 
                                 <div className="or__div">
                                     <div className="or__line"></div>
