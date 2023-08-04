@@ -6,7 +6,8 @@ import app_logo from '../../Images/app.png'
 import play_logo from '../../Images/play.png'
 import fb_logo from '../../Images/fb.png'
 import './LoginPage.css'
-import Signin from "./Signin";
+import SignIn from "../SignInPage/SignIn";
+import SignUp from "../SignUpPage/SignUp";
 
 
 const LoginPage = () => {
@@ -28,7 +29,8 @@ const LoginPage = () => {
                                 {/* <input className="input__text" placeholder="Phone number, username, or email"/>
                                 <input className="input__text" placeholder="Password"/>
                                 <button className="login__button">Log In</button> */}
-                                <Signin/>
+                                {/* <SignIn/> */}
+                                <SignUp/>
 
                                 <div className="or__div">
                                     <div className="or__line"></div>

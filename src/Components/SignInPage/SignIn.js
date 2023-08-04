@@ -1,7 +1,7 @@
 import React from 'react'
-import './Singin.css'
+import '../SignInPage/SignIn.css'
 
-function Signin() {
+function SignIn() {
   return (
     <div>
         <input className="input__text" placeholder="Phone number, username, or email"/>
@@ -11,4 +11,7 @@ function Signin() {
   )
 }
 
-export default Signin
+export default SignIn
+
+
+ 
