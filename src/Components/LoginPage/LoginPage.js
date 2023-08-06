@@ -8,9 +8,16 @@ import fb_logo from '../../Images/fb.png'
 import './LoginPage.css'
 import SignIn from "../SignInPage/SignIn";
 import SignUp from "../SignUpPage/SignUp";
+import {useState} from 'react';
 
 
 const LoginPage = () => {
+    const [signUp,setSignUp] = useState(false);
+
+    const signUpClickHandler = () => {
+        setSignUp(!signUp);
+    }
+
     return ( 
         <Grid container>
             <Grid item xs={3}>Hey</Grid>
@@ -29,8 +36,8 @@ const LoginPage = () => {
                                 {/* <input className="input__text" placeholder="Phone number, username, or email"/>
                                 <input className="input__text" placeholder="Password"/>
                                 <button className="login__button">Log In</button> */}
-                                {/* <SignIn/> */}
-                                <SignUp/>
+                                {!signUp && <SignIn/>}
+                                {signUp && <SignUp/>}
 
                                 <div className="or__div">
                                     <div className="or__line"></div>
@@ -52,7 +59,7 @@ const LoginPage = () => {
 
                         <div className="loginpage__rightcomponent2">
                                 <div className="signup__div">
-                                    Don't have an account? <a  href="javascript.void(0)" style={{ textDecoration: 'none', fontWeight:'bold', color:'0395F6', marginLeft:'5px' }}>Sign Up</a>
+                                    Don't have an account? <span style={{fontWeight:'bold', color:'#0395F6', marginLeft:'5px' }} onClick={signUpClickHandler}>Sign Up</span>
                                 </div>
                         </div>
 
