@@ -3,3 +3,21 @@
     background-color: white;
     border: 1px solid #dbdbdb;
 }
+
+.navbar_logo{
+    margin-top: 10px;
+}
+
+.navbar_img{
+    margin: 15px 10px;
+}
+
+.navbar_searchBar{
+    height: 20px;
+    width: 200px;
+    margin-top: 15px;
+    border: 1px solid #dbdbdb;
+    text-align: center; 
+    background-color: #fafafa;
+    border-radius: 5px;
+}
