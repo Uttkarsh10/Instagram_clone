@@ -2,7 +2,9 @@ import React from 'react'
 
 function MainContent() {
   return (
-    <div>MainContent</div>
+    <Grid container>
+      
+    </Grid>
   )
 }
 
