@@ -9,6 +9,13 @@ function StatusBar() {
         {username : 'uttkarsh_10', image : statusImage},
         {username : 'anu_29', image : statusImage},
         {username : 'neeraj_15', image : statusImage},
+        {username : 'taru_15', image : statusImage},
+        {username : 'chavi_15', image : statusImage},
+        {username : 'stef_15', image : statusImage},
+        {username : 'vk_15', image : statusImage},
+        {username : 'kiara', image : statusImage},
+        {username : 'asdnajn', image : statusImage},
+        {username : 'neeraj_15', image : statusImage}
     ]
 
   return (
@@ -17,50 +24,15 @@ function StatusBar() {
             {statusList.map((item) => (
                 <div className='status'>
                     <Avatar src={item.image} className='statusbar_status'/>
-                    <div style={{fontSize : '12px',maxWidth:'70px', overflow:'hidden'}}>{item.username}</div>
+                    <div style={{fontSize : '12px',maxWidth:'70px', overflow:'hidden', textAlign:'center'}}>{item.username}</div>
                 </div>
             ))}
 
-        <div className='status'>
+        {/* <div className='status'>
             <Avatar src={statusImage} className='statusbar_status'/>
             <div style={{fontSize : '12px',maxWidth:'70px', overflow:'hidden'}}>uttkarsh_10</div>
         </div>
-
-        <div className='status'>
-            <Avatar src={statusImage} className='statusbar_status'/>
-            <div style={{fontSize : '12px',maxWidth:'70px', overflow:'hidden'}}>uttkarsh_10</div>
-        </div>
-
-        <div className='status'>
-            <Avatar src={statusImage} className='statusbar_status'/>
-            <div style={{fontSize : '12px',maxWidth:'70px', overflow:'hidden'}}>uttkarsh_10</div>
-        </div>
-
-        <div className='status'>
-            <Avatar src={statusImage} className='statusbar_status'/>
-            <div style={{fontSize : '12px',maxWidth:'70px', overflow:'hidden'}}>uttkarsh_10</div>
-        </div>
-
-        <div className='status'>
-            <Avatar src={statusImage} className='statusbar_status'/>
-            <div style={{fontSize : '12px',maxWidth:'70px', overflow:'hidden'}}>uttkarsh_10</div>
-        </div>
-
-        <div className='status'>
-            <Avatar src={statusImage} className='statusbar_status'/>
-            <div style={{fontSize : '12px',maxWidth:'70px', overflow:'hidden'}}>uttkarsh_10</div>
-        </div>
-
-        <div className='status'>
-            <Avatar src={statusImage} className='statusbar_status'/>
-            <div style={{fontSize : '12px',maxWidth:'70px', overflow:'hidden'}}>uttkarsh_10</div>
-        </div>
-
-        <div className='status'>
-            <Avatar src={statusImage} className='statusbar_status'/>
-            <div style={{fontSize : '12px',maxWidth:'70px', overflow:'hidden'}}>uttkarsh_10</div>
-        </div>
-        
+         */}
     </div>
   )
 }
