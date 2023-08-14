@@ -20,3 +20,21 @@
 .post__username{
     margin-top: 5px;
 }
+
+.post__reactImage{
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+.post__comment{
+    margin: 10px;
+}
+
+.comment_box{
+    height: 55px;
+    width: 600px;
+    border: 1px solid #dbdbdb;
+    font-size: 15px;
+    padding-left: 10px;
+}
