@@ -28,9 +28,7 @@ function Post(props) {
                 <img src={comment} alt="" className='post__reactImage'/>
                 <img src={share} alt="" className='post__reactImage'/>
             </div>
-            <div style={{fontWeight:'bold', marginLeft:'20px'}}>
-                1500 likes
-            </div>
+            <div style={{fontWeight:'bold', marginLeft:'20px'}}>{props.likes}</div>
         </div>
 
         <div>
