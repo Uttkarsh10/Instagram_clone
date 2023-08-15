@@ -1,26 +1,25 @@
 import React from 'react'
 import './Post.css'
 import { Avatar } from '@mui/material'
-import postImage from '../../Images/post.jpg'
 import love from '../../Images/love.svg'
 import comment from '../../Images/comment.svg'
 import share from '../../Images/share.svg'
 
-function Post() {
+function Post(props) {
   return (
     <div className='post__container'>
 
         <div className='post__header'>
-            <Avatar className='username__image' src=""/>
+            <Avatar className='username__image' src={props.profile_pic}/>
             <div className='post__username'>
-                <div style={{textAlign:'center', fontWeight:'bold'}}>Username</div>
-                <div>Location</div>
+                <div style={{textAlign:'center', fontWeight:'bold'}}>{props.username}</div>
+                <div>{props.location}</div>
             </div>
 
         </div>
 
         <div className='post__image'>
-            <img src={postImage} alt="" width="615px"/>
+            <img src={props.post_image} alt="" width="615px"/>
         </div>
 
         <div>
