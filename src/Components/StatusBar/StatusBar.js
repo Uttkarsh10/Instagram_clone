@@ -2,6 +2,7 @@ import React from 'react'
 import './StatusBar.css'
 import { Avatar } from '@mui/material'
 import statusImage from '../../Images/pp1.png'
+import uploadstatus from '../../Images/statusadd.png'
 
 function StatusBar() {
 
@@ -20,6 +21,7 @@ function StatusBar() {
 
   return (
     <div className='statusbar_container'>
+        <img alt="" src={uploadstatus} className='statusbar_upload'/>
 
             {statusList.map((item) => (
                 <div className='status'>

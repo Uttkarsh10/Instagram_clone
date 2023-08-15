@@ -22,3 +22,9 @@
 .status{
     margin: 20px 15px;
 }
+
+.statusbar_upload{
+    height: 40px;
+    width: 40px;
+    margin: 30px 20px 30px 30px;
+}

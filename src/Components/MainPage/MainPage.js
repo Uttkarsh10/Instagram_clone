@@ -1,5 +1,6 @@
 import React from 'react'
 import Post from '../Post/Post'
+import './MainPage.css'
 import postImage from '../../Images/post_image.jpeg'
 import profilePic from '../../Images/profile_pic.jpeg'
 import profilePic2 from '../../Images/pp2.png'
@@ -8,6 +9,7 @@ import profilePic4 from '../../Images/pp4.jpeg'
 import postImage2 from '../../Images/post.jpg'
 import postImage3 from '../../Images/post2.jpg'
 import postImage4 from '../../Images/post3.jpg'
+import uploadImage from '../../Images/upload.png'
 
 function MainPage() {
   const postData = [
@@ -59,6 +61,9 @@ function MainPage() {
       <Post username="taru_10" location="Roorkee" post_image={postImage3} profile_pic ={profilePic3} likes="500"/>
       <Post username="kiara_advani" location="Mumbai" post_image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlE0qyZVJ2LkP3cJi7Y0n3gVdgBYBVszONhw&usqp=CAU" profile_pic ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgq1H1MTr6v2o6YYW3w4gkmYfc5vEvXjp7aQ&usqp=CAU" likes="1500"/>
       <Post username="afcsdc_sas" location="Pune" post_image={postImage4} profile_pic ={profilePic4} likes="20"/> */}
+      <div style={{textAlign:'center', margin:'10px'}}>
+        <img alt="" src={uploadImage} className='mainpage_uploadicon'/>
+      </div>
 
       {postData.map(postItem => (
         <Post username= {postItem.username} location = {postItem.location} post_image = {postItem.post_image} profile_pic = {postItem.profile_pic} likes = {postItem.likes}/>
